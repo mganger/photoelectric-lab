@@ -1,1 +1,13 @@
 #!/bin/bash
+
+#find all the files
+files=$(find . -name "*.csv")
+
+touch coefficients.csv
+rm coefficients.csv
+
+#loop through each one, outputing the coefficients
+for i in $files; do
+	gnuplot -e "d(x) = c * atan(b * a**x)**d + e; fit d(x) '$i' using 3:2 via a,b,c,d,e; set print 'tmp'; print '$i;',a,';',b,';',c,';',d,';',e"
+	cat tmp >> coefficients.csv
+done
