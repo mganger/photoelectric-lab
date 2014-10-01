@@ -1,0 +1,459 @@
+------------------
+./100nA/365nm.csv
+a=0.453898355992668;b=4.82182759744423;c=0.0104809401993139;d=9.70333716761626;e=0.0245431331147634;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.34146
+minSlope = -0.25263
+intercept =  0.23991
+stoppingPotential =  0.85250
+------------------
+------------------
+./100nA/577nm.csv
+a=0.265736600975783;b=3.59227387688493;c=0.0120021956879835;d=6.47305901110644;e=0.0335249579448016;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.13713
+minSlope = -0.11378
+intercept =  0.098779
+stoppingPotential =  0.57353
+------------------
+------------------
+./100nA/436nm.csv
+a=0.305325679725324;b=4.52084594415422;c=0.071264477115301;d=8.15570181211254;e=0.00380227879025976;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.14190
+minSlope = -1.2875
+intercept =  0.84219
+stoppingPotential =  0.65120
+------------------
+------------------
+./100nA/baseline100nA.csv
+a=0.840836010095721;b=5.19520124632052;c=-3.24351129405533e-05;d=4.80559486044954;e=0.0363583921566507;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -10.0000
+minSlope =  4.7088e-06
+intercept =  0.036150
+stoppingPotential =  44.315
+------------------
+------------------
+./100nA/405nm.csv
+a=0.410617455283191;b=4.87293235932435;c=0.0139307952043469;d=9.68030456701789;e=0.0216408959450759;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.28861
+minSlope = -0.37449
+intercept =  0.31033
+stoppingPotential =  0.77088
+------------------
+------------------
+./100nA/313nm.csv
+a=0.465478322377815;b=2.39665174918139;c=0.00101053382661316;d=5.89068202864339;e=0.0353652160513538;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.65347
+minSlope = -0.0042548
+intercept =  0.037837
+stoppingPotential =  0.58094
+------------------
+------------------
+./100nA/FullSpectrum100nA.csv
+a=3.31674738341308e-05;b=20.2086804359434;c=2.51197744300442;d=0.336781733713973;e=-0.111794467775842;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx =  0.35333
+minSlope = -5.8153
+intercept =  3.9130
+stoppingPotential =  0.69211
+------------------
+------------------
+./100nA/334nm.csv
+a=0.513479212518128;b=3.03426708983139;c=0.00084388992199165;d=6.83093292330515;e=0.0352437912174755;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.60088
+minSlope = -0.0047251
+intercept =  0.039076
+stoppingPotential =  0.81104
+------------------
+------------------
+./100nA/546nm.csv
+a=0.276721819904687;b=4.95515437061611;c=0.0211783187119063;d=8.87192526782032;e=0.0244890689709915;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.12195
+minSlope = -0.57152
+intercept =  0.37373
+stoppingPotential =  0.61107
+------------------
+------------------
+./10nA/334.csv
+a=0.498752682023012;b=3.25051022282671;c=0.0113542928150401;d=7.04581819445259;e=-0.00668778306031397;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.51831
+minSlope = -0.073072
+intercept =  0.054268
+stoppingPotential =  0.83418
+------------------
+------------------
+./10nA/365nm.csv
+a=0.294398365892145;b=3.70221006261448;c=0.527012156497852;d=5.32071779378803;e=-0.0835661429951686;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx =  0.022572
+minSlope = -2.7458
+intercept =  2.1065
+stoppingPotential =  0.79761
+------------------
+------------------
+./10nA/577nm.csv
+a=0.297651611115867;b=4.53211542099366;c=0.0576311643921879;d=8.2161335255349;e=-0.0293997315210469;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.14264
+minSlope = -1.0928
+intercept =  0.66323
+stoppingPotential =  0.63384
+------------------
+------------------
+./10nA/436nm.csv
+a=0.00587431953574872;b=8.47059588972033;c=4.15888463868751;d=0.989625673741447;e=-0.287947022662502;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx =  0.41720
+minSlope = -10.598
+intercept =  7.3946
+stoppingPotential =  0.72488
+------------------
+------------------
+./10nA/405nm.csv
+a=0.167189610830895;b=3.44620677702017;c=1.19523591459843;d=3.62681991473042;e=-0.110212645409443;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx =  0.16267
+minSlope = -4.2273
+intercept =  2.8966
+stoppingPotential =  0.71128
+------------------
+------------------
+./10nA/FullSpectrum.csv
+a=4.72600068904246e-05;b=1045.31981040775;c=6.4233368612008;d=0.403509183990846;e=-1.49603774796045;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx =  0.75203
+minSlope = -16.444
+intercept =  15.836
+stoppingPotential =  1.0540
+------------------
+------------------
+./10nA/313nm.csv
+a=0.46461640801992;b=3.54033644105684;c=0.00675113102027031;d=6.76938496021394;e=-0.00790495604022438;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.31027
+minSlope = -0.042287
+intercept =  0.030897
+stoppingPotential =  0.91758
+------------------
+------------------
+./10nA/BackgroundLevel10nA.csv
+a=0.446020100167792;b=1.46740287433641;c=0.000700748553400792;d=6.68938069532635;e=0.00748470753667216;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -1.3717
+minSlope = -0.0044600
+intercept =  0.0065668
+stoppingPotential = -0.20581
+------------------
+------------------
+./10nA/546nm.csv
+a=0.0497088038828321;b=9.35467347613445;c=0.166057801089752;d=7.98920065823372;e=-0.0708069313906622;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx =  0.19268
+minSlope = -7.0433
+intercept =  3.4939
+stoppingPotential =  0.50612
+------------------
+------------------
+./1000nA/365nm.csv
+a=0.444993059630112;b=4.70352252528573;c=0.00113887726697898;d=9.48079027106345;e=0.0385923606453244;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.33628
+minSlope = -0.025463
+intercept =  0.059675
+stoppingPotential =  0.82798
+------------------
+------------------
+./1000nA/577nm.csv
+a=0.261356034271596;b=4.64638780438898;c=0.00033905746443748;d=9.10832116299372;e=0.0392721914633605;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.18342
+minSlope = -0.010627
+intercept =  0.044784
+stoppingPotential =  0.51865
+------------------
+------------------
+./1000nA/436nm.csv
+a=0.367123246778083;b=4.33051631500792;c=0.00695593749370376;d=8.39916854033656;e=0.0357988824538349;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.23878
+minSlope = -0.11840
+intercept =  0.11873
+stoppingPotential =  0.70043
+------------------
+------------------
+./1000nA/baseline100nA.csv
+a=8.07535633904178e-07;b=8.62804090939693e-05;c=-3.75401439288859e-05;d=7.27050605709805;e=0.0390002302519926;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx =  6.6340
+minSlope = 0
+intercept =  0.039000
+stoppingPotential = NaN
+------------------
+------------------
+./1000nA/405nm.csv
+a=0.407011062388626;b=5.20485576577569;c=0.000990749022214341;d=10.3764603767187;e=0.0381367603559898;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.28684
+minSlope = -0.036777
+intercept =  0.066224
+stoppingPotential =  0.76372
+------------------
+------------------
+./1000nA/313nm.csv
+a=0.396024737475486;b=7.59975820844922;c=-0.006384302059724;d=0.0289678538359914;e=0.045700075090529;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -10.0000
+minSlope =  1.3796e-09
+intercept =  0.039232
+stoppingPotential =  4.6885e+06
+------------------
+------------------
+./1000nA/FullSpectrum1000nA.csv
+a=0.38069300480701;b=4.90354011635424;c=0.0238742088958926;d=9.45699775146697;e=0.0196994025224937;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.23632
+minSlope = -0.62989
+intercept =  0.48566
+stoppingPotential =  0.73975
+------------------
+------------------
+./1000nA/334nm.csv
+a=0.00776028581014032;b=0.000388897271904209;c=2.31542178273104e-05;d=7.26480725635999;e=0.039361587963112;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -1.9388
+minSlope = -0.0011483
+intercept =  0.037358
+stoppingPotential = -1.7452
+------------------
+------------------
+./1000nA/546nm.csv
+a=0.27057061880853;b=5.00230978486687;c=0.0018675408984921;d=9.16153306447008;e=0.0385210294666158;
+Stopping Potential
+initial =
+
+@(x) (c * atan (b * a .^ x) .^ d + e)
+
+slope =
+
+@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
+
+minx = -0.13608
+minSlope = -0.058404
+intercept =  0.072667
+stoppingPotential =  0.58466
+------------------

@@ -5,9 +5,43 @@ files=$(find . -name "*.csv")
 
 touch coefficients.csv
 rm coefficients.csv
+touch potentials
+rm potentials
 
 #loop through each one, outputing the coefficients
 for i in $files; do
-	gnuplot -e "d(x) = c * atan(b * a**x)**d + e; fit d(x) '$i' using 3:2 via a,b,c,d,e; set print 'tmp'; print '$i;',a,';',b,';',c,';',d,';',e"
-	cat tmp >> coefficients.csv
+	gnuplot -e "d(x) = c * atan(b * a**x)**d + e;\
+	            a=.5;b=5;c=.02;d=5;e=1;\
+	            fit d(x) '$i' using 3:2 via a,b,c,d,e;\
+	            set print 'tmp';\
+                    print '$i;',a,';',b,';',c,';',d,';',e;\
+                    set terminal pdf;
+	            set output '$i.pdf';
+	            plot '$i' using 3:2, d(x)"
+	if [[ $? -ne 0 ]]; then
+		echo Error with $i
+		exit 1
+	fi
+	cat tmp >> coefficients
+	a=$(cut -d ';' -f 2 tmp)
+	b=$(cut -d ';' -f 3 tmp)
+	c=$(cut -d ';' -f 4 tmp)
+	d=$(cut -d ';' -f 5 tmp)
+	e=$(cut -d ';' -f 6 tmp)
+	rm tmp
+	echo "------------------" >> potentials
+	echo "$i" >> potentials
+	echo "a=$a;b=$b;c=$c;d=$d;e=$e;" >> potentials
+	echo Stopping Potential >> potentials
+	octave -qf --eval "a=$a;b=$b;c=$c;d=$d;e=$e;" max_slope.m  >> potentials
+	echo "------------------" >> potentials
 done
+
+touch tmp
+rm tmp
+
+#put the info into a file, combining the wavelength and potential
+grep '.csv' potentials | xargs basename -s .csv -a | sed 's/nm//' > name
+grep 'stoppingPotential' potentials | cut -d '=' -f 2 > stops 
+
+paste -d ';' name stops > Solved
