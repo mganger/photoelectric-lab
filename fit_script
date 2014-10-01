@@ -45,3 +45,11 @@ grep '.csv' potentials | xargs basename -s .csv -a | sed 's/nm//' > name
 grep 'stoppingPotential' potentials | cut -d '=' -f 2 > stops 
 
 paste -d ';' name stops > Solved
+
+#make find the stopping potential
+gnuplot --persist -e 'y(x) = m*x+b;
+            m=1;b=1;
+            set datafile separator ";";
+            fit y(x) "Solved" using (3.0e8/($1*10**-9)):2 via m,b;
+            plot "Solved" using (3.0e8/($1*10.0**-9)):2 , y(x);
+            print "h = ",m*1.602e-19;'
