@@ -49,7 +49,22 @@ paste -d ';' name stops uncertainty > Solved
 cp Solved tmp
 cat tmp | sort > Solved
 
+#loop through each line and output to a separate file
+mkdir -p wavelengths
+rm -r wavelengths
+mkdir -p wavelengths
+cat Solved | while read a; do
+	filename=$(echo $a | cut -d ';' -f 1)
+	echo $a | cut -d ';' -f 2,3 >> wavelengths/$filename
+done
 
+touch FinalData
+rm FinalData
+for i in $(ls wavelengths); do
+	echo $i > tmp
+	weightedMean wavelengths/$i | cut -d ' ' -f 1,3 --output-delimiter=';' >> tmp
+	cat tmp | paste -d ';' -s >> FinalData
+done
 
 #make find the stopping potential
 gnuplot --persist -e 'y(x) = m*x+b;
