@@ -77,32 +77,6 @@ rightBound =  0.61389
 uncertainty =  0.23599
 ------------------
 ------------------
-./100nA/baseline100nA.csv
-a=0.840836010095721;b=5.19520124632052;c=-3.24351129405533e-05;d=4.80559486044954;e=0.0363583921566507;
-Stopping Potential
-initial =
-
-@(x) (c * atan (b * a .^ x) .^ d + e)
-
-inverse =
-
-@(x) (log (tan (((x - e) / c) .^ (1 / d)) / b) / log (a))
-
-slope =
-
-@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
-
-h = -2.8411e-04
-target = -4.6641e-05
-minx = -10.0000
-minSlope =  4.7088e-06
-intercept =  0.036150
-stoppingPotential =  44.315
-leftBound = -10.0000
-rightBound =  4.5406
-uncertainty = -2.7297
-------------------
-------------------
 ./100nA/405nm.csv
 a=0.410617455283191;b=4.87293235932435;c=0.0139307952043469;d=9.68030456701789;e=0.0216408959450759;
 Stopping Potential
@@ -153,32 +127,6 @@ stoppingPotential =  0.58094
 leftBound = -0.65347
 rightBound =  2.1709
 uncertainty =  0.75874
-------------------
-------------------
-./100nA/FullSpectrum100nA.csv
-a=3.31674738341308e-05;b=20.2086804359434;c=2.51197744300442;d=0.336781733713973;e=-0.111794467775842;
-Stopping Potential
-initial =
-
-@(x) (c * atan (b * a .^ x) .^ d + e)
-
-inverse =
-
-@(x) (log (tan (((x - e) / c) .^ (1 / d)) / b) / log (a))
-
-slope =
-
-@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
-
-h =  2.9246
-target =  2.6582
-minx =  0.35333
-minSlope = -5.8153
-intercept =  3.9130
-stoppingPotential =  0.69211
-leftBound =  0.35333
-rightBound =  0.15240
-uncertainty =  0.25286
 ------------------
 ------------------
 ./100nA/334nm.csv
@@ -363,32 +311,6 @@ rightBound =  0.33314
 uncertainty =  0.24791
 ------------------
 ------------------
-./10nA/FullSpectrum.csv
-a=4.72600068904246e-05;b=1045.31981040775;c=6.4233368612008;d=0.403509183990846;e=-1.49603774796045;
-Stopping Potential
-initial =
-
-@(x) (c * atan (b * a .^ x) .^ d + e)
-
-inverse =
-
-@(x) (log (tan (((x - e) / c) .^ (1 / d)) / b) / log (a))
-
-slope =
-
-@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
-
-h =  7.7072
-target =  6.8087
-minx =  0.75203
-minSlope = -16.444
-intercept =  15.836
-stoppingPotential =  1.0540
-leftBound =  0.75203
-rightBound =  0.66628
-uncertainty =  0.70915
-------------------
-------------------
 ./10nA/313nm.csv
 a=0.46461640801992;b=3.54033644105684;c=0.00675113102027031;d=6.76938496021394;e=-0.00790495604022438;
 Stopping Potential
@@ -413,32 +335,6 @@ stoppingPotential =  0.91758
 leftBound = -0.31027
 rightBound =  0.45754
 uncertainty =  0.073633
-------------------
-------------------
-./10nA/BackgroundLevel10nA.csv
-a=0.446020100167792;b=1.46740287433641;c=0.000700748553400792;d=6.68938069532635;e=0.00748470753667216;
-Stopping Potential
-initial =
-
-@(x) (c * atan (b * a .^ x) .^ d + e)
-
-inverse =
-
-@(x) (log (tan (((x - e) / c) .^ (1 / d)) / b) / log (a))
-
-slope =
-
-@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
-
-h =  0.014371
-target =  0.0014193
-minx = -1.3717
-minSlope = -0.0044600
-intercept =  0.0065668
-stoppingPotential = -0.20581
-leftBound = -1.3717
-rightBound =  1.4842
-uncertainty =  0.056224
 ------------------
 ------------------
 ./10nA/546nm.csv
@@ -545,32 +441,6 @@ rightBound =  1.3656
 uncertainty =  0.56340
 ------------------
 ------------------
-./1000nA/baseline100nA.csv
-a=8.07535633904178e-07;b=8.62804090939693e-05;c=-3.75401439288859e-05;d=7.27050605709805;e=0.0390002302519926;
-Stopping Potential
-initial =
-
-@(x) (c * atan (b * a .^ x) .^ d + e)
-
-inverse =
-
-@(x) (log (tan (((x - e) / c) .^ (1 / d)) / b) / log (a))
-
-slope =
-
-@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
-
-h = -0.0010009
-target = -8.7585e-05
-minx =  6.6340
-minSlope = 0
-intercept =  0.039000
-stoppingPotential = NaN
-leftBound =  6.6340
-rightBound =  0.66931
-uncertainty =  3.6516
-------------------
-------------------
 ./1000nA/405nm.csv
 a=0.407011062388626;b=5.20485576577569;c=0.000990749022214341;d=10.3764603767187;e=0.0381367603559898;
 Stopping Potential
@@ -595,84 +465,6 @@ stoppingPotential =  0.76372
 leftBound = -0.28684
 rightBound =  1.5758
 uncertainty =  0.64446
-------------------
-------------------
-./1000nA/313nm.csv
-a=0.396024737475486;b=7.59975820844922;c=-0.006384302059724;d=0.0289678538359914;e=0.045700075090529;
-Stopping Potential
-initial =
-
-@(x) (c * atan (b * a .^ x) .^ d + e)
-
-inverse =
-
-@(x) (log (tan (((x - e) / c) .^ (1 / d)) / b) / log (a))
-
-slope =
-
-@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
-
-h = -0.0064684
-target = -0.0067077
-minx = -10.0000
-minSlope =  1.3796e-09
-intercept =  0.039232
-stoppingPotential =  4.6885e+06
-leftBound = -10.0000
-rightBound =  2.4365
-uncertainty = -3.7817
-------------------
-------------------
-./1000nA/FullSpectrum1000nA.csv
-a=0.38069300480701;b=4.90354011635424;c=0.0238742088958926;d=9.45699775146697;e=0.0196994025224937;
-Stopping Potential
-initial =
-
-@(x) (c * atan (b * a .^ x) .^ d + e)
-
-inverse =
-
-@(x) (log (tan (((x - e) / c) .^ (1 / d)) / b) / log (a))
-
-slope =
-
-@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
-
-h =  1.7086
-target =  0.10930
-minx = -0.23632
-minSlope = -0.62989
-intercept =  0.48566
-stoppingPotential =  0.73975
-leftBound = -0.23632
-rightBound =  0.81351
-uncertainty =  0.28859
-------------------
-------------------
-./1000nA/334nm.csv
-a=0.00776028581014032;b=0.000388897271904209;c=2.31542178273104e-05;d=7.26480725635999;e=0.039361587963112;
-Stopping Potential
-initial =
-
-@(x) (c * atan (b * a .^ x) .^ d + e)
-
-inverse =
-
-@(x) (log (tan (((x - e) / c) .^ (1 / d)) / b) / log (a))
-
-slope =
-
-@(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
-
-h =  6.1575e-04
-target =  5.3942e-05
-minx = -1.9388
-minSlope = -0.0011483
-intercept =  0.037358
-stoppingPotential = -1.7452
-leftBound = -1.9388
-rightBound =  1.6429
-uncertainty = -0.14795
 ------------------
 ------------------
 ./1000nA/546nm.csv
