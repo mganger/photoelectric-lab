@@ -15,14 +15,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  0.83833
-target =  0.094314
+target =  0.052398
 minx = -0.34146
 minSlope = -0.25263
 intercept =  0.23991
 stoppingPotential =  0.85250
 leftBound = -0.34146
-rightBound =  0.73548
-uncertainty =  0.19701
+rightBound =  1.1178
+uncertainty =  0.38817
 ------------------
 ------------------
 ./100nA/577nm.csv
@@ -41,14 +41,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  0.22323
-target =  0.034325
+target =  0.023164
 minx = -0.13713
 minSlope = -0.11378
 intercept =  0.098779
 stoppingPotential =  0.57353
 leftBound = -0.13713
-rightBound =  1.1591
-uncertainty =  0.51096
+rightBound =  1.0746
+uncertainty =  0.46874
 ------------------
 ------------------
 ./100nA/436nm.csv
@@ -67,14 +67,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  2.8338
-target =  0.35464
+target =  0.21295
 minx = -0.14190
 minSlope = -1.2875
 intercept =  0.84219
 stoppingPotential =  0.65120
 leftBound = -0.14190
-rightBound =  0.43511
-uncertainty =  0.14660
+rightBound =  0.61389
+uncertainty =  0.23599
 ------------------
 ------------------
 ./100nA/baseline100nA.csv
@@ -93,14 +93,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h = -2.8411e-04
-target = -6.0846e-05
+target = -4.6641e-05
 minx = -10.0000
 minSlope =  4.7088e-06
 intercept =  0.036150
 stoppingPotential =  44.315
 leftBound = -10.0000
-rightBound =  4.5350
-uncertainty = -2.7325
+rightBound =  4.5406
+uncertainty = -2.7297
 ------------------
 ------------------
 ./100nA/405nm.csv
@@ -119,14 +119,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  1.1027
-target =  0.12421
+target =  0.069068
 minx = -0.28861
 minSlope = -0.37449
 intercept =  0.31033
 stoppingPotential =  0.77088
 leftBound = -0.28861
-rightBound =  0.61799
-uncertainty =  0.16469
+rightBound =  0.92082
+uncertainty =  0.31610
 ------------------
 ------------------
 ./100nA/313nm.csv
@@ -145,14 +145,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  0.014449
-target =  0.0024554
+target =  0.0017330
 minx = -0.65347
 minSlope = -0.0042548
 intercept =  0.037837
 stoppingPotential =  0.58094
 leftBound = -0.65347
-rightBound =  2.1653
-uncertainty =  0.75594
+rightBound =  2.1709
+uncertainty =  0.75874
 ------------------
 ------------------
 ./100nA/FullSpectrum100nA.csv
@@ -171,14 +171,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  2.9246
-target =  2.8044
+target =  2.6582
 minx =  0.35333
 minSlope = -5.8153
 intercept =  3.9130
 stoppingPotential =  0.69211
 leftBound =  0.35333
-rightBound =  0.12741
-uncertainty =  0.24037
+rightBound =  0.15240
+uncertainty =  0.25286
 ------------------
 ------------------
 ./100nA/334nm.csv
@@ -197,14 +197,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  0.018449
-target =  0.0026888
+target =  0.0017663
 minx = -0.60088
 minSlope = -0.0047251
 intercept =  0.039076
 stoppingPotential =  0.81104
 leftBound = -0.60088
-rightBound =  2.5067
-uncertainty =  0.95292
+rightBound =  2.5164
+uncertainty =  0.95774
 ------------------
 ------------------
 ./100nA/546nm.csv
@@ -223,14 +223,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  1.1637
-target =  0.13755
+target =  0.079365
 minx = -0.12195
 minSlope = -0.57152
 intercept =  0.37373
 stoppingPotential =  0.61107
 leftBound = -0.12195
-rightBound =  0.49225
-uncertainty =  0.18515
+rightBound =  0.69420
+uncertainty =  0.28613
 ------------------
 ------------------
 ./10nA/334.csv
@@ -249,14 +249,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  0.27352
-target =  0.038706
+target =  0.025030
 minx = -0.51831
 minSlope = -0.073072
 intercept =  0.054268
 stoppingPotential =  0.83418
 leftBound = -0.51831
-rightBound =  0.26115
-uncertainty = -0.12858
+rightBound =  0.51175
+uncertainty = -0.0032807
 ------------------
 ------------------
 ./10nA/365nm.csv
@@ -275,14 +275,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  5.8253
-target =  1.1095
+target =  0.81828
 minx =  0.022572
 minSlope = -2.7458
 intercept =  2.1065
 stoppingPotential =  0.79761
 leftBound =  0.022572
-rightBound =  0.37733
-uncertainty =  0.19995
+rightBound =  0.50543
+uncertainty =  0.26400
 ------------------
 ------------------
 ./10nA/577nm.csv
@@ -301,14 +301,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  2.3551
-target =  0.29314
+target =  0.17538
 minx = -0.14264
 minSlope = -1.0928
 intercept =  0.66323
 stoppingPotential =  0.63384
 leftBound = -0.14264
-rightBound =  0.38317
-uncertainty =  0.12026
+rightBound =  0.54566
+uncertainty =  0.20151
 ------------------
 ------------------
 ./10nA/436nm.csv
@@ -327,14 +327,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  6.5022
-target =  4.8091
+target =  4.4840
 minx =  0.41720
 minSlope = -10.598
 intercept =  7.3946
 stoppingPotential =  0.72488
 leftBound =  0.41720
-rightBound =  0.21522
-uncertainty =  0.31621
+rightBound =  0.25989
+uncertainty =  0.33855
 ------------------
 ------------------
 ./10nA/405nm.csv
@@ -353,14 +353,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  6.1482
-target =  1.8101
+target =  1.5026
 minx =  0.16267
 minSlope = -4.2273
 intercept =  2.8966
 stoppingPotential =  0.71128
 leftBound =  0.16267
-rightBound =  0.25760
-uncertainty =  0.21013
+rightBound =  0.33314
+uncertainty =  0.24791
 ------------------
 ------------------
 ./10nA/FullSpectrum.csv
@@ -379,14 +379,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  7.7072
-target =  7.1941
+target =  6.8087
 minx =  0.75203
 minSlope = -16.444
 intercept =  15.836
 stoppingPotential =  1.0540
 leftBound =  0.75203
-rightBound =  0.72031
-uncertainty =  0.73617
+rightBound =  0.66628
+uncertainty =  0.70915
 ------------------
 ------------------
 ./10nA/313nm.csv
@@ -405,14 +405,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  0.14354
-target =  0.021106
+target =  0.013928
 minx = -0.31027
 minSlope = -0.042287
 intercept =  0.030897
 stoppingPotential =  0.91758
 leftBound = -0.31027
-rightBound =  0.25353
-uncertainty = -0.028368
+rightBound =  0.45754
+uncertainty =  0.073633
 ------------------
 ------------------
 ./10nA/BackgroundLevel10nA.csv
@@ -431,14 +431,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  0.014371
-target =  0.0021378
+target =  0.0014193
 minx = -1.3717
 minSlope = -0.0044600
 intercept =  0.0065668
 stoppingPotential = -0.20581
 leftBound = -1.3717
-rightBound =  1.4481
-uncertainty =  0.038211
+rightBound =  1.4842
+uncertainty =  0.056224
 ------------------
 ------------------
 ./10nA/546nm.csv
@@ -457,14 +457,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  6.1249
-target =  0.77855
+target =  0.47230
 minx =  0.19268
 minSlope = -7.0433
 intercept =  3.4939
 stoppingPotential =  0.50612
 leftBound =  0.19268
-rightBound =  0.40304
-uncertainty =  0.29786
+rightBound =  0.46812
+uncertainty =  0.33040
 ------------------
 ------------------
 ./1000nA/365nm.csv
@@ -483,14 +483,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  0.082385
-target =  0.0093774
+target =  0.0052581
 minx = -0.33628
 minSlope = -0.025463
 intercept =  0.059675
 stoppingPotential =  0.82798
 leftBound = -0.33628
-rightBound =  1.7632
-uncertainty =  0.71347
+rightBound =  1.7902
+uncertainty =  0.72694
 ------------------
 ------------------
 ./1000nA/577nm.csv
@@ -509,14 +509,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  0.020730
-target =  0.0024120
+target =  0.0013755
 minx = -0.18342
 minSlope = -0.010627
 intercept =  0.044784
 stoppingPotential =  0.51865
 leftBound = -0.18342
-rightBound =  1.3408
-uncertainty =  0.57869
+rightBound =  1.3462
+uncertainty =  0.58140
 ------------------
 ------------------
 ./1000nA/436nm.csv
@@ -535,14 +535,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  0.30874
-target =  0.037830
+target =  0.022393
 minx = -0.23878
 minSlope = -0.11840
 intercept =  0.11873
 stoppingPotential =  0.70043
 leftBound = -0.23878
-rightBound =  1.3058
-uncertainty =  0.53349
+rightBound =  1.3656
+uncertainty =  0.56340
 ------------------
 ------------------
 ./1000nA/baseline100nA.csv
@@ -561,13 +561,13 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h = -0.0010009
-target = -1.3763e-04
+target = -8.7585e-05
 minx =  6.6340
 minSlope = 0
 intercept =  0.039000
 stoppingPotential = NaN
 leftBound =  6.6340
-rightBound =  0.66924
+rightBound =  0.66931
 uncertainty =  3.6516
 ------------------
 ------------------
@@ -587,14 +587,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  0.10740
-target =  0.011730
+target =  0.0063606
 minx = -0.28684
 minSlope = -0.036777
 intercept =  0.066224
 stoppingPotential =  0.76372
 leftBound = -0.28684
-rightBound =  1.5496
-uncertainty =  0.63138
+rightBound =  1.5758
+uncertainty =  0.64446
 ------------------
 ------------------
 ./1000nA/313nm.csv
@@ -613,14 +613,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h = -0.0064684
-target = -0.0070311
+target = -0.0067077
 minx = -10.0000
 minSlope =  1.3796e-09
 intercept =  0.039232
 stoppingPotential =  4.6885e+06
 leftBound = -10.0000
-rightBound =  2.2689
-uncertainty = -3.8656
+rightBound =  2.4365
+uncertainty = -3.7817
 ------------------
 ------------------
 ./1000nA/FullSpectrum1000nA.csv
@@ -639,14 +639,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  1.7086
-target =  0.19473
+target =  0.10930
 minx = -0.23632
 minSlope = -0.62989
 intercept =  0.48566
 stoppingPotential =  0.73975
 leftBound = -0.23632
-rightBound =  0.55807
-uncertainty =  0.16087
+rightBound =  0.81351
+uncertainty =  0.28859
 ------------------
 ------------------
 ./1000nA/334nm.csv
@@ -665,14 +665,14 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  6.1575e-04
-target =  8.4729e-05
+target =  5.3942e-05
 minx = -1.9388
 minSlope = -0.0011483
 intercept =  0.037358
 stoppingPotential = -1.7452
 leftBound = -1.9388
 rightBound =  1.6429
-uncertainty = -0.14794
+uncertainty = -0.14795
 ------------------
 ------------------
 ./1000nA/546nm.csv
@@ -691,12 +691,12 @@ slope =
 @(x) ((a .^ x * b * c * d * atan (a .^ x * b) .^ (d - 1) * log (a)) / (1 + a .^ (2 * x) * b .^ 2))
 
 h =  0.11696
-target =  0.013563
+target =  0.0077154
 minx = -0.13608
 minSlope = -0.058404
 intercept =  0.072667
 stoppingPotential =  0.58466
 leftBound = -0.13608
-rightBound =  1.0891
-uncertainty =  0.47650
+rightBound =  1.1047
+uncertainty =  0.48432
 ------------------

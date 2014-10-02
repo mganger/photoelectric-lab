@@ -33,7 +33,7 @@ for i in $files; do
 	echo "$i" >> potentials
 	echo "a=$a;b=$b;c=$c;d=$d;e=$e;" >> potentials
 	echo Stopping Potential >> potentials
-	octave -qf --eval "a=$a;b=$b;c=$c;d=$d;e=$e;percent=0.1;" max_slope.m  >> potentials
+	octave -qf --eval "a=$a;b=$b;c=$c;d=$d;e=$e;percent=0.05;" max_slope.m  >> potentials
 	echo "------------------" >> potentials
 done
 
@@ -46,6 +46,10 @@ grep 'stoppingPotential' potentials | cut -d '=' -f 2 > stops
 grep 'uncertainty' potentials | cut -d '=' -f 2 > uncertainty
 
 paste -d ';' name stops uncertainty > Solved
+cp Solved tmp
+cat tmp | sort > Solved
+
+
 
 #make find the stopping potential
 gnuplot --persist -e 'y(x) = m*x+b;
