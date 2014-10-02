@@ -17,7 +17,10 @@ for i in $files; do
                     print '$i;',a,';',b,';',c,';',d,';',e;\
                     set terminal pdf;
 	            set output '$i.pdf';
-	            plot '$i' using 3:2, d(x)"
+	            set title 'Potential vs. Current ($(basename -s .csv $i))';
+	            set xlabel 'Potential (V)';
+	            set ylabel 'Current (arbitrary)';
+	            plot '$i' using 3:2 title 'Data', d(x) title 'Trendline'"
 	if [[ $? -ne 0 ]]; then
 		echo Error with $i
 		exit 1
@@ -74,3 +77,8 @@ gnuplot -p -e 'y(x) = m*x+b;
             fit y(x) "FinalData" using (3.0e8/($1*10**-9)):2 via m,b;
             plot "FinalData" using (3.0e8/($1*10.0**-9)):2:3 with errorbars , y(x);
             print "h = ",m*1.602e-19;'
+
+touch output.pdf
+rm output.pdf
+pdfmerge */*.pdf output.pdf
+
