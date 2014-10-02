@@ -33,7 +33,7 @@ for i in $files; do
 	echo "$i" >> potentials
 	echo "a=$a;b=$b;c=$c;d=$d;e=$e;" >> potentials
 	echo Stopping Potential >> potentials
-	octave -qf --eval "a=$a;b=$b;c=$c;d=$d;e=$e;" max_slope.m  >> potentials
+	octave -qf --eval "a=$a;b=$b;c=$c;d=$d;e=$e;percent=0.1;" max_slope.m  >> potentials
 	echo "------------------" >> potentials
 done
 
@@ -43,8 +43,9 @@ rm tmp
 #put the info into a file, combining the wavelength and potential
 grep '.csv' potentials | xargs basename -s .csv -a | sed 's/nm//' > name
 grep 'stoppingPotential' potentials | cut -d '=' -f 2 > stops 
+grep 'uncertainty' potentials | cut -d '=' -f 2 > uncertainty
 
-paste -d ';' name stops > Solved
+paste -d ';' name stops uncertainty > Solved
 
 #make find the stopping potential
 gnuplot --persist -e 'y(x) = m*x+b;
